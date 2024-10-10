@@ -1,0 +1,96 @@
+<html>
+<style>
+body{background-color:#FFFDB5; margin:50px 70px 50px 70px;}
+h2{color:white;font:30pt lucida console;background-color:#5C2FC2;}
+h4 {color:brwon;font:700 11pt verdana}
+td {font:15pt verdana;}
+a {font:15pt verdana;color:#5C2FC2;}
+input,textarea{
+  border: 2px solid #510c91;
+  border-radius: 8px;
+  line-height: 1.8;
+}
+input[type="submit"],input[type="reset"] {
+background-color:#5C2FC2;
+color:white;
+width:150px;
+font-size:15pt;
+padding:6px;
+}
+p {word-spacing: 30px;}
+</style>
+<script>
+function myFunction() {
+  var x = document.getElementById("pwd");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+/*function confirmPassword() {  
+	  var pw1 = document.getElementById("pwd");  
+	  var pw2 = document.getElementById("cpwd");  
+	  if(pw1 != pw2)  
+	  {   
+	    alert("Passwords did not match");  
+	    return false;
+	  } else {  
+	    alert("Password created successfully");  
+	    return true;
+	  }  
+	} */ 
+</script>
+<body>
+<h2 align="center">New User Registration </h2>
+<hr><br>
+<form action="reg.jsp" method="post">
+<table>
+<tr>
+<td>
+User Name
+<td>
+<input type=text name=uname size=50 required>*
+</tr>
+<tr>
+<td>
+Password
+<td>
+<input type=password name=pwd id=pwd size=50 required>*
+<input type="checkbox" onclick="myFunction()">Show Password
+</tr>
+<tr>
+<td>
+Confirm Password
+<td>
+<input type=password name=cpwd id=cpwd size=50 required>*
+</tr>
+<tr>
+<td>
+Email Address
+<td>
+<input type=text name=email size=50 required>*
+</tr>
+<tr>
+<td>Mailing Address
+<td>
+<textarea name="address" rows=4 cols=50 required></textarea>*
+</td>
+</tr>
+<tr>
+<td>
+Phone Number
+<td>
+<input type=text  name=phone  size=50 inputmode="numeric">
+</tr>
+</table>
+
+<p>
+<input type=submit value="Register">
+<input type=reset value="Clear All">
+</p>
+<a href="Login.html">Go Back</a>
+</form>
+
+</body>
+</html>   

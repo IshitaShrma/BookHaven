@@ -1,0 +1,80 @@
+<html>
+<style>
+body{background-color:#FFFDB5; margin:50px 70px 50px 70px;}
+h2{color:white;font:30pt lucida console;background-color:#5C2FC2;}
+h4 {color:brwon;font:700 11pt verdana}
+td {font:15pt verdana;}
+a {font:15pt verdana;color:#5C2FC2;}
+input,textarea{
+  border: 2px solid #510c91;
+  border-radius: 8px;
+  line-height: 1.8;
+}
+input[type="submit"],input[type="reset"] {
+background-color:#5C2FC2;
+color:white;
+width:150px;
+font-size:15pt;
+padding:6px;
+}
+p {word-spacing: 30px;}
+</style>
+
+<body bgcolor="beige">
+
+<h2>Change Profile </h2>
+<hr>
+<form action="register.jsp" method="post">
+<table>
+<tr>
+<td>
+User Name
+<td>
+<input type=text name=uname size=20>*
+</tr>
+<tr>
+<td>
+Password
+<td>
+<input type=password name=pwd size=20>*
+</tr>
+<tr>
+<td>
+Confirm Password
+<td>
+<input type=password name=pwd2 size=20>*
+</tr>
+
+<tr>
+<td>
+Email Address
+<td>
+<input type=text name=email size=30>*
+</tr>
+
+<tr>
+<td>Mailing Address
+<td>
+<textarea name="address" rows=3 cols=30></textarea>*
+</td>
+</tr>
+
+
+<tr>
+<td>
+Phone Number
+<td>
+<input type=text  name=phoneno  size=30>
+</tr>
+	
+</table>
+<p>
+
+<input type=submit value="Register">
+<input type=reset value="Clear All">
+<p>
+<a href="login.html">Go Back</a>
+</form>
+
+</body>
+</html>   
